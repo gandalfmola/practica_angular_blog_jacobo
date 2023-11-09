@@ -1,0 +1,11 @@
+
+<article>
+    <h3>{{postMostrar.titulo}}</h3>
+    <p>{{postMostrar.texto}}</p>
+    <p id="autorFecha">Autor: {{postMostrar.autor}} Fecha: {{postMostrar.fecha | date:'dd/MM/yyyy HH:mm:ss'}}</p>
+    <img [src]="postMostrar.imagen">
+    
+    <p>Categoría: {{postMostrar.categoria}}</p>
+</article>
+
+

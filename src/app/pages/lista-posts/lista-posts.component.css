@@ -1,0 +1,11 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+div {
+    width: 32%;
+    
+}

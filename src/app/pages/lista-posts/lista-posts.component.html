@@ -1,1 +1,7 @@
-<p>lista-posts works!</p>
+
+<section>
+    <div *ngFor="let post of arrPostLista">
+        <app-post-card [postMostrar]="post"></app-post-card>
+    </div>
+    
+</section>

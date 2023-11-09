@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ListaPostsComponent } from './pages/lista-posts/lista-posts.component';
 import { FormularioComponent } from './pages/formulario/formulario.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { PostCardComponent } from './components/post-card/post-card.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     AppComponent,
     ListaPostsComponent,
     FormularioComponent,
-    NavBarComponent,    
+    NavBarComponent,
+    PostCardComponent,    
   ],
   imports: [
     BrowserModule,

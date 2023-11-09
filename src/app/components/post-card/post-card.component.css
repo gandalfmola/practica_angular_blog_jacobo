@@ -1,0 +1,30 @@
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid darkgreen;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+h3 {
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    width: 100%;
+    text-align: justify;    
+}
+
+img {
+    display: block;
+    width: auto;
+    height: 20vh;
+}
+
+#autorFecha {
+    justify-content: flex-end;
+    background-color:beige;
+}
