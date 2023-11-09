@@ -1,0 +1,38 @@
+
+<form [formGroup]="formulario" (ngSubmit)="envioFor()">
+
+    <div>
+        <label >Título</label>
+        <input type="text" formControlName="titulo">
+    </div>
+
+    <div>
+        <label >Texto</label>
+        <input type="text" formControlName="texto">
+    </div>
+
+    <div>
+        <label >Autor</label>
+        <input type="text" formControlName="autor">
+    </div>
+
+    <div>
+        <label >Imagen</label>
+        <input type="text" formControlName="imagen">
+    </div>
+
+    <div>
+        <label >Fecha</label>
+        <input type="date" formControlName="fecha">
+    </div>
+
+    <div>
+        <label >Categoria</label>
+        <input type="text" formControlName="categoria">
+    </div>
+
+    <div>
+        <input type="submit">
+    </div>
+
+</form>

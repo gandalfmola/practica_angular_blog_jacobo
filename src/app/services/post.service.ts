@@ -58,8 +58,8 @@ export class PostService {
     return this.arrPosts
   }
 
-  createPost() {
-
+  createPost(post:IPost) {
+    this.arrPosts.push(post)
   }
 
   getByCategoria() {

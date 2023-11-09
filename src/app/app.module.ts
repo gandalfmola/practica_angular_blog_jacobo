@@ -8,6 +8,9 @@ import { FormularioComponent } from './pages/formulario/formulario.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { PostCardComponent } from './components/post-card/post-card.component';
 
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { NewForComponent } from './components/new-for/new-for.component'
+
 
 @NgModule({
   declarations: [
@@ -15,11 +18,14 @@ import { PostCardComponent } from './components/post-card/post-card.component';
     ListaPostsComponent,
     FormularioComponent,
     NavBarComponent,
-    PostCardComponent,    
+    PostCardComponent,
+    NewForComponent       
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
