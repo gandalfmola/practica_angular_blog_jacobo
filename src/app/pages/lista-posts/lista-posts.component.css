@@ -9,3 +9,8 @@ div {
     width: 32%;
     
 }
+
+select {
+    font-size: 30px;
+    margin-bottom: 50px;
+}

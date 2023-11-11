@@ -8,6 +8,8 @@ export class PostService {
 
   arrPosts: IPost[] = []
 
+  arrCategorias: IPost[] = []
+
   constructor() {
     this.arrPosts = [
       {
@@ -62,8 +64,18 @@ export class PostService {
     this.arrPosts.push(post)
   }
 
-  getByCategoria() {
+  getByCategoria(categoria:string) {
+    const arrCategorias:any = []
+    
+    if (categoria === "") return this.getAll()
 
+    for (let post of this.arrPosts) {      
+            
+      if (post.categoria === categoria) {        
+        arrCategorias.push(post)
+      }
+    }
+    return arrCategorias
   }
 
 

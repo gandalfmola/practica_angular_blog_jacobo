@@ -15,8 +15,17 @@ export class ListaPostsComponent {
 
   ngOnInit() {
     this.arrPostLista = this.postService.getAll()
-    console.log(this.arrPostLista);
-    
+    console.log(this.arrPostLista);    
   }
+
+  clickCategoria($event:any) {
+    console.log($event.target.value);
+    
+    this.arrPostLista = this.postService.getByCategoria($event.target.value)
+    console.log(this.arrPostLista);
+        
+  }
+
+  
 
 }
