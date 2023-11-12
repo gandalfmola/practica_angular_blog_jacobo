@@ -1,0 +1,18 @@
+
+
+<article>
+
+    <h4>{{paisMostrar.name.common}}</h4>
+    <p id="capital">Capital: {{paisMostrar.capital}}</p>
+    <p id="continente">Continente: {{paisMostrar.continents}}</p>
+    <p id="superficie">Superficie: {{paisMostrar.area}} km2</p>
+    <div>
+        <img [src]="paisMostrar.flags.png">
+    </div>
+    <p>Moneda: {{paisMostrar.currencies | json}}</p>
+    <p [ngStyle]="{width:'30%'}">Población: {{paisMostrar.population}} hab.</p>
+    <p [ngStyle]="{width:'30%'}">Hora local: {{paisMostrar.timezones}}</p>
+    <p [ngStyle]="{width:'30%'}">Idioma: {{paisMostrar.languages | json}}</p>
+    <p>Google Maps: {{paisMostrar.maps.googleMaps}}</p>
+
+</article>
