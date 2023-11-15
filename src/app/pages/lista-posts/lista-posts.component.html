@@ -1,16 +1,21 @@
 
 
-<select (change)="clickCategoria($event)">
-    <option value="">Selecciona una opción</option>
-    <option value="Pruebas">Pruebas</option>
-    <option value="Deportes">Deportes</option>
-    <option value="Politica">Politica</option>
-    <option value="Economia">Economia</option>
-</select>
+<div  class="opciones">
+    <h3>¿Que posts te interesan más?</h3>
+
+    <select (change)="clickCategoria($event)">
+        <option value="">Temáticas</option>
+        <option value="Pruebas">Pruebas</option>
+        <option value="Deportes">Deportes</option>
+        <option value="Politica">Politica</option>
+        <option value="Economia">Economia</option>
+    </select>
+</div>
+
 
 
 <section>
-    <div *ngFor="let post of arrPostLista">
+    <div *ngFor="let post of arrPostLista" class="lista">
         <app-post-card [postMostrar]="post"></app-post-card>
     </div>
     

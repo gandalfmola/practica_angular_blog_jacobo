@@ -14,7 +14,10 @@ import { NewForComponent } from './components/new-for/new-for.component'
 import { HttpClientModule } from '@angular/common/http';
 import { DivisasComponent } from './pages/divisas/divisas.component';
 import { PaisesComponent } from './pages/paises/paises.component';
-import { PaisCardComponent } from './components/pais-card/pais-card.component'
+import { PaisCardComponent } from './components/pais-card/pais-card.component';
+import { RegistroComponent } from './pages/registro/registro.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SalirComponent } from './pages/salir/salir.component'
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { PaisCardComponent } from './components/pais-card/pais-card.component'
     NewForComponent,
     DivisasComponent,
     PaisesComponent,
-    PaisCardComponent       
+    PaisCardComponent,
+    RegistroComponent,
+    LoginComponent,
+    SalirComponent       
   ],
   imports: [
     BrowserModule,

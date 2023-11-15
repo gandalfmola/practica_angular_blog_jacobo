@@ -1,0 +1,28 @@
+
+
+<h3>Completa el Registro y disfruta de MyBlog</h3>
+
+<form [formGroup]="registro" (submit)="envioFor()">
+
+    <div>
+        <label>USUARIO</label>
+        <input type="text" formControlName="userName">
+    </div>
+
+    <div>
+        <label>EMAIL</label>
+        <input type="email" formControlName="email">
+    </div>
+
+    <div>
+        <label>CONTRASEÑA</label>
+        <input type="password" formControlName="password">
+    </div>
+
+    <div>
+        <input type="submit">
+    </div>
+
+</form>
+
+<p>{{nuevoUsuario | json}}</p>

@@ -5,9 +5,12 @@
 
     <ul>
         <li [routerLink]="['posts']">Posts</li>
-        <li [routerLink]="['/blog', 'new']">New</li>
-        <li [routerLink]="['divisas']">Divisas</li>
-        <li [routerLink]="['paises']">Paises</li>
+        <li *ngIf="loginService.isLoged()" [routerLink]="['/blog', 'new']">New</li>
+        <li *ngIf="loginService.isLoged()" [routerLink]="['divisas']">Divisas</li>
+        <li *ngIf="loginService.isLoged()" [routerLink]="['paises']">Paises</li>
+        <li [routerLink]="['registro']">Regístrate</li>
+        <li [routerLink]="['login']">Login</li>
+        <li *ngIf="loginService.isLoged()" [routerLink]="['salir']">Salir</li>
     </ul>
 
 </nav>

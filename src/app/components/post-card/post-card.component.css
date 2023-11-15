@@ -4,8 +4,9 @@ article {
     flex-wrap: wrap;
     border: 5px solid darkgreen;
     border-radius: 10px;
-    padding: 10px;
+    padding: 30px;
     justify-content: center;
+    gap: 25px;
 }
 
 h3 {
@@ -20,8 +21,8 @@ p {
 
 img {
     display: block;
-    width: auto;
-    height: 20vh;
+    width: 100%;
+    height: auto;
 }
 
 #autorFecha {

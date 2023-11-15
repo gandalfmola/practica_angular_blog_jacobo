@@ -1,0 +1,26 @@
+
+
+<h3>Introduce email y contraseña</h3>
+
+<form [formGroup]="login" (submit)="envioLogin()">
+
+    
+    <div>
+        <label>EMAIL</label>
+        <input type="email" formControlName="email">
+    </div>
+
+    <div>
+        <label>CONTRASEÑA</label>
+        <input type="password" formControlName="password">
+    </div>
+
+    <div>
+        <input type="submit">
+    </div>
+
+</form>
+
+<p *ngIf="errorLogin">Email o Contraseña incorrectos</p>
+
+<!-- <p>{{login | json}}</p> -->
