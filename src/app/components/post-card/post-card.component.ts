@@ -10,6 +10,8 @@ export class PostCardComponent {
 
   @Input() postMostrar:IPost;
 
+  leerMas:boolean = false
+
   constructor() {
     this.postMostrar = {
       titulo:"POST DE PRUEBA",
@@ -19,6 +21,10 @@ export class PostCardComponent {
       fecha: new Date,
       categoria:"Pruebas"
     }
+  }
+
+  viewMore() {
+    this.leerMas = !this.leerMas
   }
 
 }

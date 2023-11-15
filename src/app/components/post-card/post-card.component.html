@@ -1,9 +1,10 @@
 
 <article>
     <h3>{{postMostrar.titulo}}</h3>
-    <p>{{postMostrar.texto}}</p>
+    <app-texto [textoMostrar]="postMostrar.texto" [leerMasTexto]="leerMas"></app-texto>
 
-    
+    <button *ngIf="!leerMas" class="btn" (click)="viewMore()">... leer mas</button>
+    <button *ngIf="leerMas" class="btn" (click)="viewMore()">... atrás</button>
 
     <p id="autorFecha">Autor: {{postMostrar.autor}} Fecha: {{postMostrar.fecha | date:'dd/MM/yyyy HH:mm:ss'}}</p>
     <img [src]="postMostrar.imagen">

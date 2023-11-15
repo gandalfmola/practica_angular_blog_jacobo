@@ -17,7 +17,9 @@ import { PaisesComponent } from './pages/paises/paises.component';
 import { PaisCardComponent } from './components/pais-card/pais-card.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { LoginComponent } from './pages/login/login.component';
-import { SalirComponent } from './pages/salir/salir.component'
+import { SalirComponent } from './pages/salir/salir.component';
+import { PreviewPipe } from './pipes/preview.pipe';
+import { TextoComponent } from './components/texto/texto.component'
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { SalirComponent } from './pages/salir/salir.component'
     PaisCardComponent,
     RegistroComponent,
     LoginComponent,
-    SalirComponent       
+    SalirComponent,
+    PreviewPipe,
+    TextoComponent       
   ],
   imports: [
     BrowserModule,
