@@ -1,10 +1,11 @@
 
 
+
 <form [formGroup]="formulario" (ngSubmit)="envioFor()">
 
     <div>
         <label >Título</label>
-        <input type="text" formControlName="titulo">
+        <input type="text" formControlName="titulo" class="form-control">
     </div>
 
     <div>
@@ -33,7 +34,16 @@
     </div>
 
     <div>
-        <input type="submit">
+        <input type="submit" class="btn btn-info">
     </div>
 
 </form>
+
+
+
+    <h3>Editor</h3>
+    <angular-editor [(ngModel)]="htmlContent" [config]="config"></angular-editor>
+    <div class="html">
+        {{htmlContent}}
+    </div>
+

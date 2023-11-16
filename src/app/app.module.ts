@@ -21,6 +21,11 @@ import { SalirComponent } from './pages/salir/salir.component';
 import { PreviewPipe } from './pipes/preview.pipe';
 import { TextoComponent } from './components/texto/texto.component'
 
+import { AngularEditorModule } from '@kolkov/angular-editor';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -37,14 +42,16 @@ import { TextoComponent } from './components/texto/texto.component'
     LoginComponent,
     SalirComponent,
     PreviewPipe,
-    TextoComponent       
+    TextoComponent,          
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule ,
-    HttpClientModule
+    HttpClientModule,
+    AngularEditorModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
