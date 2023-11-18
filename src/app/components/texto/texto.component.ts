@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 
+
 @Component({
   selector: 'app-texto',
   templateUrl: './texto.component.html',
@@ -10,5 +11,7 @@ export class TextoComponent {
   @Input() textoMostrar:any;
 
   @Input() leerMasTexto:boolean = false
+
+
 
 }

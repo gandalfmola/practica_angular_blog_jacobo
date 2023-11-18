@@ -1,5 +1,11 @@
 
 
-<p *ngIf="!leerMasTexto">{{textoMostrar | preview}}</p>
+<p *ngIf="!leerMasTexto" [innerHTML]="textoMostrar | preview"></p>
 
-<p *ngIf="leerMasTexto">{{textoMostrar}}</p>
+<p *ngIf="leerMasTexto" [innerHTML]="textoMostrar"></p>
+
+
+
+
+
+

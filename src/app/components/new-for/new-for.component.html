@@ -4,33 +4,34 @@
 <form [formGroup]="formulario" (ngSubmit)="envioFor()">
 
     <div>
-        <label >Título</label>
+        <label class="form-label">Título</label>
         <input type="text" formControlName="titulo" class="form-control">
     </div>
 
     <div>
         <label >Texto</label>
-        <input type="text" formControlName="texto">
+        <angular-editor [(ngModel)]="htmlContent" [config]="config" formControlName="texto"></angular-editor>
     </div>
 
     <div>
         <label >Autor</label>
-        <input type="text" formControlName="autor">
+        <input type="text" formControlName="autor" class="form-control">
+        
     </div>
 
     <div>
         <label >Imagen</label>
-        <input type="text" formControlName="imagen">
+        <input type="text" formControlName="imagen" class="form-control">
     </div>
 
     <div>
         <label >Fecha</label>
-        <input type="date" formControlName="fecha">
+        <input type="date" formControlName="fecha" class="form-control">
     </div>
 
     <div>
         <label >Categoria</label>
-        <input type="text" formControlName="categoria">
+        <input type="text" formControlName="categoria" class="form-control">
     </div>
 
     <div>
@@ -41,9 +42,10 @@
 
 
 
-    <h3>Editor</h3>
-    <angular-editor [(ngModel)]="htmlContent" [config]="config"></angular-editor>
-    <div class="html">
+    <!-- <h3>Editor</h3>
+     <input type="text" formControlName="texto"> -->
+    <!-- <input type="text" formControlName="autor"> 
+    <div [innerHTML]="htmlContent">
         {{htmlContent}}
-    </div>
+    </div>-->
 
