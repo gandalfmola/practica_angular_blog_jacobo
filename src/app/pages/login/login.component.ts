@@ -42,6 +42,10 @@ export class LoginComponent {
       this.router.navigate(["/posts"])
       console.log("Has entrado");
 
+      //****************************** */
+      localStorage.setItem("autor",this.login.value.email)
+      //****************************** */
+
     } else {
       this.errorLogin = true
     }

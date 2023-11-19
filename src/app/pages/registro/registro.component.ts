@@ -35,7 +35,11 @@ export class RegistroComponent {
     this.loginService.addUser(this.nuevoUsuario)
 
     localStorage.setItem("Login","true")
-    console.log("Has entrado");    
+    console.log("Has entrado");   
+    
+    //****************************** */
+    localStorage.setItem("autor",this.nuevoUsuario.userName)
+    //****************************** */
     
     this.router.navigate(["/posts"])
   }
