@@ -68,13 +68,12 @@ export class NewForComponent {
 
   envioFor() {
     console.log(this.formulario.value);    
-    
-    // this.formulario.value.categoria = this.formulario.value.categoria.replace(/^\w/, (c:any) => c.toUpperCase())
+
     this.formulario.value.categoria = this.postService.toCapitalizeWords(this.formulario.value.categoria)
  
     this.formulario.value.fecha = new Date() 
     
-    
+    this.formulario.value.autor = localStorage.getItem("autor")
     
     this.postService.createPost(this.formulario.value)
     this.router.navigate(["posts"])

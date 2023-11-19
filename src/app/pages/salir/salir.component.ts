@@ -16,7 +16,8 @@ export class SalirComponent {
   ngOnInit() {
 
     localStorage.removeItem("Login")
-    console.log("Has salido");    
+    console.log("Has salido");   
+    localStorage.removeItem("autor") 
 
     setTimeout(()=>{
       this.router.navigate(["posts"])

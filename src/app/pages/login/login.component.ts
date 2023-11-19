@@ -20,7 +20,7 @@ export class LoginComponent {
 
   constructor() {
     this.login = new FormGroup({      
-      email: new FormControl(),
+      userName: new FormControl(),
       password: new FormControl()
     })
   }
@@ -43,7 +43,7 @@ export class LoginComponent {
       console.log("Has entrado");
 
       //****************************** */
-      localStorage.setItem("autor",this.login.value.email)
+      localStorage.setItem("autor",this.login.value.userName)
       //****************************** */
 
     } else {

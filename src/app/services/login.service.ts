@@ -36,7 +36,7 @@ export class LoginService {
     if (this.arrUsuarios === null) return false
 
     for (let usuario of this.arrUsuarios) {
-      if (usuario.email === login.email && usuario.password === login.password) {
+      if (usuario.userName === login.userName && usuario.password === login.password) {
         return true
       }
     }
