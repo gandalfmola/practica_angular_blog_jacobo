@@ -11,11 +11,14 @@ export class ListaPostsComponent {
 
   arrPostLista:IPost[] = []
 
+  arrCategoriasLista:string[] = []
+
   postService = inject(PostService)
 
   ngOnInit() {
     this.arrPostLista = this.postService.getAll()
-    console.log(this.arrPostLista);    
+    console.log(this.arrPostLista);   
+    this.arrCategoriasLista = this.postService.getCategorias() 
   }
 
   clickCategoria($event:any) {

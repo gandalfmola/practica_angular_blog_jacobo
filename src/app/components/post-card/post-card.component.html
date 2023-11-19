@@ -4,9 +4,12 @@
     <app-texto [textoMostrar]="postMostrar.texto" [leerMasTexto]="leerMas"></app-texto>
 
     <button *ngIf="!leerMas" class="btn" (click)="viewMore()">... leer mas</button>
-    <button *ngIf="leerMas" class="btn" (click)="viewMore()">... atrás</button>
+    <button *ngIf="leerMas" class="btn" (click)="viewMore()">... menos</button>
 
-    <p id="autorFecha">Autor: {{postMostrar.autor}} Fecha: {{postMostrar.fecha | date:'dd/MM/yyyy HH:mm:ss'}}</p>
+    <p class="autorFecha">Autor: {{postMostrar.autor}} </p>
+    <!-- <p class="autorFecha">Fecha: {{postMostrar.fecha | date:'dd/MM/yyyy HH:mm:ss'}}</p> -->
+    <p class="autorFecha">Fecha: {{postMostrar.fecha | date:'medium'}}</p>
+
     <img [src]="postMostrar.imagen">
     
     <p>Categoría: {{postMostrar.categoria}}</p>

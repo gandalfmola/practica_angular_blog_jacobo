@@ -36,7 +36,7 @@ export class NewForComponent {
 
     showToolbar: true,
 
-    placeholder: 'Enter text in this rich text editor....',
+    placeholder: 'Escribe aquí tu post....',
     defaultParagraphSeparator: 'p',
     defaultFontName: 'Arial',
     customClasses: [
@@ -67,9 +67,22 @@ export class NewForComponent {
   }
 
   envioFor() {
-    console.log(this.formulario.value);
+    console.log(this.formulario.value);    
+    
+    // this.formulario.value.categoria = this.formulario.value.categoria.replace(/^\w/, (c:any) => c.toUpperCase())
+    this.formulario.value.categoria = this.postService.toCapitalizeWords(this.formulario.value.categoria)
+ 
+    this.formulario.value.fecha = new Date() 
+    
+    
+    
     this.postService.createPost(this.formulario.value)
     this.router.navigate(["posts"])
   }
 
+  
 }
+
+
+
+

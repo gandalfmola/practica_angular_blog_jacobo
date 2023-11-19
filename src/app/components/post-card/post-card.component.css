@@ -25,13 +25,14 @@ img {
     height: auto;
 }
 
-#autorFecha {
+.autorFecha {
     justify-content: flex-end;
-    background-color:beige;
+    text-align: center;
+    width: 48%;
 }
 
 button {
-    color: blue;
+    color: green;
     font-size: 25px;
     font-weight: bold;
     padding-top: 0;

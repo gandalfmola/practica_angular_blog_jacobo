@@ -4,11 +4,12 @@
     <h3>¿Que posts te interesan más?</h3>
 
     <select (change)="clickCategoria($event)">
-        <option value="">Temáticas</option>
-        <option value="Pruebas">Pruebas</option>
+        <option value="">Elige un tema</option>
+        <option *ngFor="let categoria of arrCategoriasLista" [value]="categoria">{{categoria}}</option>
+        <!-- <option value="Pruebas">Pruebas</option>
         <option value="Deportes">Deportes</option>
         <option value="Politica">Politica</option>
-        <option value="Economia">Economia</option>
+        <option value="Economia">Economia</option> -->
     </select>
 </div>
 

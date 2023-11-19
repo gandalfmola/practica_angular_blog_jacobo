@@ -1,0 +1,45 @@
+
+
+
+div.formulario {
+    background-color: rgb(158, 207, 158);
+    padding: 35px;
+    width: 70%;
+    margin: 100px auto;
+    border-radius: 20px;
+    
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+div.elemento {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+label {
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+div.elemento:last-child {
+    justify-content: center;   
+    display: flex;
+}
+
+input.btn {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+

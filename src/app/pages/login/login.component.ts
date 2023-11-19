@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { LoginService } from 'src/app/services/login.service';
 
 @Component({
@@ -10,7 +11,8 @@ import { LoginService } from 'src/app/services/login.service';
 export class LoginComponent {
 
   errorLogin:boolean = false;
-  
+
+  router = inject(Router)  
 
   loginService = inject(LoginService)
 
@@ -37,7 +39,9 @@ export class LoginComponent {
     
      if (this.loginService.loginControl(this.login.value) ) {
       localStorage.setItem("Login","true")
-      console.log("Has entrado");            
+      this.router.navigate(["/posts"])
+      console.log("Has entrado");
+
     } else {
       this.errorLogin = true
     }

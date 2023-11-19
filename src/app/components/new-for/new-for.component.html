@@ -1,44 +1,48 @@
 
+<div class="formulario">
+
+    <form [formGroup]="formulario" (ngSubmit)="envioFor()">
+
+        <div class="elemento">
+            <label class="form-label">Título del Post</label>
+            <input type="text" formControlName="titulo" class="form-control">
+        </div>
+    
+        <div class="elemento">
+            <label >Contenido</label>
+            <angular-editor [(ngModel)]="htmlContent" [config]="config" formControlName="texto"></angular-editor>
+        </div>
+    
+        <div class="elemento">
+            <label >Autor</label>
+            <input type="text" formControlName="autor" class="form-control">
+            
+        </div>
+    
+        <div class="elemento">
+            <label >Indica la dirección de la foto que quieras mostrar</label>
+            <input type="text" formControlName="imagen" class="form-control">
+        </div>
+    
+        <!-- <div class="elemento">
+            <label >Fecha</label>
+            <input type="date" formControlName="fecha" class="form-control">
+        </div> -->
+    
+        <div class="elemento">
+            <label >Categoria</label>
+            <input type="text" formControlName="categoria" class="form-control">
+        </div>
+    
+        <div class="elemento">
+            <input type="submit" class="btn">
+        </div>
+    
+    </form>
+
+</div>
 
 
-<form [formGroup]="formulario" (ngSubmit)="envioFor()">
-
-    <div>
-        <label class="form-label">Título</label>
-        <input type="text" formControlName="titulo" class="form-control">
-    </div>
-
-    <div>
-        <label >Texto</label>
-        <angular-editor [(ngModel)]="htmlContent" [config]="config" formControlName="texto"></angular-editor>
-    </div>
-
-    <div>
-        <label >Autor</label>
-        <input type="text" formControlName="autor" class="form-control">
-        
-    </div>
-
-    <div>
-        <label >Imagen</label>
-        <input type="text" formControlName="imagen" class="form-control">
-    </div>
-
-    <div>
-        <label >Fecha</label>
-        <input type="date" formControlName="fecha" class="form-control">
-    </div>
-
-    <div>
-        <label >Categoria</label>
-        <input type="text" formControlName="categoria" class="form-control">
-    </div>
-
-    <div>
-        <input type="submit" class="btn btn-info">
-    </div>
-
-</form>
 
 
 
