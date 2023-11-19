@@ -1,26 +1,30 @@
 
+<section>
 
-<h3>Introduce email y contraseña</h3>
+    <h3>Introduce usuario y contraseña</h3>
 
-<form [formGroup]="login" (submit)="envioLogin()">
+    <form [formGroup]="login" (submit)="envioLogin()">
 
-    
-    <div>
-        <label>USUARIO</label>
-        <input type="text" formControlName="userName">
-    </div>
+        
+        <div>
+            <label class="form-label">USUARIO</label>
+            <input type="text" formControlName="userName" class="form-control">
+        </div>
 
-    <div>
-        <label>CONTRASEÑA</label>
-        <input type="password" formControlName="password">
-    </div>
+        <div>
+            <label class="form-label">CONTRASEÑA</label>
+            <input type="password" formControlName="password" class="form-control">
+        </div>
 
-    <div>
-        <input type="submit">
-    </div>
+        <div>
+            <input type="submit" class="btn btn-dark envio" >
+        </div>
 
-</form>
+    </form>
 
-<p *ngIf="errorLogin">Email o Contraseña incorrectos</p>
+    <p *ngIf="errorLogin">Email o Contraseña incorrectos</p>
+
+</section>
+
 
 <!-- <p>{{login | json}}</p> -->

@@ -7,7 +7,7 @@ article {
     border-radius: 15px;
     padding: 15px;
     gap: 10px;
-    border: 2px solid green;
+    border: 2px solid rgb(128, 177, 128);
 }
 
 h4 {
@@ -15,8 +15,8 @@ h4 {
     text-align: center;
     margin-bottom: 30px;
     font-weight: bold;
-    color: white;
-    background-color: green;
+    color: black;
+    background-color: rgb(128, 177, 128);
     padding: 0px;
 }
 

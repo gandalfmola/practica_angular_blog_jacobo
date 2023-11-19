@@ -1,0 +1,27 @@
+
+section {
+    width: 70%;
+    
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h3 {
+    margin: 50px auto;
+    margin-bottom: 80px;
+    text-align: justify;
+}
+
+div {
+    background-color: rgb(128, 177, 128);
+    margin: 0 auto;
+    padding: 15px;
+    width: 40%;
+    border-radius: 25px;
+}
+
+p {
+    font-size: 22px;
+    text-align: center;
+    color: black;
+}

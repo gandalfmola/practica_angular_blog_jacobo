@@ -1,0 +1,41 @@
+
+section {
+    background-color:rgb(128, 177, 128);
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    width: 80%;    
+    text-align: center;
+    padding-top: 40px;
+    font-size: 29px;
+}
+
+form {
+    width: 80%;
+    padding: 20px;    
+}
+
+input {
+    width: 90%;
+    
+}
+
+.envio {
+    margin: 75px 95px 50px;
+    font-size: 30px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin: 25px;
+}

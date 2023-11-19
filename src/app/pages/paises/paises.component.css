@@ -11,3 +11,10 @@ section{
 div {
     width: calc(50% - 25px)
 }
+
+h3 {
+    width: 80%;
+    text-align: justify;
+    
+    margin: 70px auto;
+}

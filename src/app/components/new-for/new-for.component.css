@@ -2,7 +2,7 @@
 
 
 div.formulario {
-    background-color: rgb(158, 207, 158);
+    background-color: rgb(128, 177, 128);
     padding: 35px;
     width: 70%;
     margin: 100px auto;
@@ -35,11 +35,12 @@ div.elemento:last-child {
 }
 
 input.btn {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
     margin: 30px;
     justify-content: center;
     color: white;
     background-color: black;
+    width: 40%;
 }
 
