@@ -67,8 +67,7 @@ export class NewForComponent {
   }
 
   envioFor() {
-    console.log(this.formulario.value);    
-
+    
     this.formulario.value.categoria = this.postService.toCapitalizeWords(this.formulario.value.categoria)
  
     this.formulario.value.fecha = new Date() 

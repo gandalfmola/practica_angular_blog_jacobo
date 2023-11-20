@@ -13,6 +13,7 @@
     <p [ngStyle]="{width:'30%'}">Población: {{paisMostrar.population}} hab.</p>
     <p [ngStyle]="{width:'30%'}">Hora local: {{paisMostrar.timezones}}</p>
     <p [ngStyle]="{width:'30%'}">Idioma: {{paisMostrar.languages | json}}</p>
-    <p>Google Maps: {{paisMostrar.maps.googleMaps}}</p>
+    <!-- <p>Google Maps: {{paisMostrar.maps.googleMaps}}</p> -->
+    <a [href]="paisMostrar.maps.googleMaps">Google Maps</a>
 
 </article>

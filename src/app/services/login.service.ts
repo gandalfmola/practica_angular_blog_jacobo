@@ -13,14 +13,12 @@ export class LoginService {
     } else {
       this.arrUsuarios = []
     }
-    console.log("Esto es localStorage");    
-    console.log(this.arrUsuarios);
-    
-
+    // console.log("Esto es localStorage");    
+    // console.log(this.arrUsuarios);
   }
 
   getAll() {
-    // this.arrUsuarios = JSON.parse(localStorage.getItem("arrUsuarios")!)
+    
     return this.arrUsuarios
   }
 
